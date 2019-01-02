@@ -6,14 +6,14 @@
 	color: #666
 
 ::selection
-	background-color: $accent
+	background-color: $main-color
 	color: #fff
 
 html, body
 	height: 100%
 
 body
-	font-size: 16px
+	font-size: 14px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
@@ -34,6 +34,66 @@ body
 
 .text-center
 	text-align: center
+
+a 
+	color: $main-color
+	&:hover
+		color: #000
+
+.top-line
+	margin: 2.5em 0 3.5em 0
+
+nav a
+	margin-left: 8em
+	text-transform: uppercase
+	float: right
+	font-weight: 400
+
+.main-img	
+	img 
+		width: 100%
+		margin-bottom: 6em
+
+.section
+	&__name, &__comment
+		color: $accent-color
+		font-family: Ubuntu, sans-serif
+		text-transform: uppercase
+	&__header
+		color: $accent-color
+		font-size: 30px
+		font-weight: 400
+		padding: 5px 0
+		&-link:hover
+			text-decoration: none
+		&-signup
+			color: #333
+			margin: 2em 0
+			font-size: 30px
+			font-weight: 400
+	&__posts
+		margin-top: 6em
+	&__signup
+		background-color: $bg-color
+	&__form
+		&-input
+			border: none
+			border-bottom: 1px solid #000
+			background-color: $bg-color
+			width: 400px
+			margin-bottom: 5em
+		&-button
+			border: none
+			background: url(../img/send-icon.svg) no-repeat center left
+			cursor: pointer
+
+
+
+.post
+	&__img
+		width: 100%
+		margin-bottom: 1.5em
+
 
 
 @import "media" // Always at the end
