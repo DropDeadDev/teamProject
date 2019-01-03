@@ -60,10 +60,9 @@ nav a
 		font-family: Ubuntu, sans-serif
 		text-transform: uppercase
 	&__header
-		color: $accent-color
+		color: $main-color
 		font-size: 30px
 		font-weight: 400
-		padding: 5px 0
 		&-link:hover
 			text-decoration: none
 		&-signup
@@ -72,7 +71,16 @@ nav a
 			font-size: 30px
 			font-weight: 400
 	&__posts
-		margin-top: 6em
+		margin-top: 5em
+		&-button
+			cursor: pointer
+			border: 1px solid $main-color
+			padding: 10px 15px
+			font-size: 20px
+			font-weight: 400
+			background-color: #fff
+			color: $main-color
+			margin: 50px 0
 	&__signup
 		background-color: $bg-color
 	&__form
@@ -87,13 +95,25 @@ nav a
 			background: url(../img/send-icon.svg) no-repeat center left
 			cursor: pointer
 
-
-
 .post
+	margin: 0 0 5em 0
 	&__img
 		width: 100%
-		margin-bottom: 1.5em
+		margin-bottom: 15px
 
+footer 
+	background-color: $bg-color
 
+.footer
+	&__links
+		margin-right: 15px
+		color: #000
+		&-wrapper
+			margin: 30px 0
+	&__social
+		&-wrapper 
+			margin: 30px 0
+			float: right
+		&-links
 
 @import "media" // Always at the end
